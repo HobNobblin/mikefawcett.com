@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.3em;
+    display: grid;
+    grid-template-columns: 30% auto;
+
+    a {
+        color: white;
+    }
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.form-button {
+    text-align: right;
+}
+
+.btn-custom {
+    padding: 10px 40px;
+}
+
+.btn-custom.theme-color {
+    background-image: linear-gradient(to right,#0066eb,#0066eb,#0066eb,#0066eb);
+}
+
+.btn-custom {
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+    transition: .2s ease-in-out;
+}
