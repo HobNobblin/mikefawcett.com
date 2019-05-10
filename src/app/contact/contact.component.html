@@ -9,46 +9,55 @@
 <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-        <div class="form-group">
-            <div class="row h4">
-                <b>CONTACT</b>&nbsp;INFORMATION
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-6">
-                    <input type=text name="name" placeholder="your name" required class="form-control" /> 
-                    <!--<div class="text text-danger">Name is required</div>-->
-                </div>
-                <div class="col-sm-6">
-                    <input type=text name="phone" placeholder="phone" class="form-control" />
+	<form [formGroup]="messageForm" (ngSubmit)="sendMessage()">
+            <div class="form-group">
+                <div class="row h4">
+                    <b>CONTACT</b>&nbsp;INFORMATION
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-12">
-                    <input type=text name="email" placeholder="email address" class="form-control" />
+            <div class="form-group">
+                <div class="row">
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-12">
-                    <textarea name="message" placeholder="message" required rows="4" class="form-control"></textarea>
+            <div class="form-group">
+                <div class="row">
                 </div>
             </div>
-        </div>
-        <div class="form-button">
-            <button class="btn btn-custom theme-color" type="submit">send</button>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type=text name="name" formControlName="name" placeholder="your name" required class="form-control" /> 
+                        <div *ngIf="submitted && !success && !messageForm.controls.name.value" class="text text-danger">Name is required</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type=text name="phone" formControlName="phone" placeholder="phone" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type=text name="email" formControlName="email" placeholder="email address" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <textarea name="message" formControlName="message" placeholder="message" required rows="4" class="form-control"></textarea>
+                        <div *ngIf="submitted && !success && !messageForm.controls.message.value" class="text text-danger">Message is required</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-button">
+                <button class="btn btn-custom theme-color" type="submit">send</button>
+            </div>
+        </form>
+
+        <div *ngIf="submitted" class="results">
+            <div *ngIf="success" class="results">
+	        <span>You message was sent.</span>
+	    </div>
         </div>
     </div>
     <div class="col-sm-1"></div>

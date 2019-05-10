@@ -34,4 +34,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * http://angular.theironnetwork.org/home
 * https://jasonwatmore.com/post/2018/10/29/angular-7-user-registration-and-login-example-tutorial
 * https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example
-
+* http://www.wisdomofjim.com/blog/sending-an-email-from-aws-lambda-function-in-nodejs-with-aws-simple-email-service
