@@ -59,13 +59,22 @@ section {
     transition: .2s ease-in-out;
 }
 
-.page-title span {
+.title {
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.title span {
     font-size: 2.5rem;
     font-weight: 300;
     width: 100%;
     text-align: center;
 }
 
-.page-title span b {
+.title span b {
     font-weight: 510;
+}
+
+.content {
+    margin-top: 50px;
 }
