@@ -58,3 +58,14 @@ section {
     background-size: 300% 100%;
     transition: .2s ease-in-out;
 }
+
+.page-title span {
+    font-size: 2.5rem;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+}
+
+.page-title span b {
+    font-weight: 510;
+}

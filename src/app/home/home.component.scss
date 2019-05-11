@@ -1,0 +1,13 @@
+.home-style {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/images/home.jpg") !important;
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+}
