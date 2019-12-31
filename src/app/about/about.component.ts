@@ -8,17 +8,17 @@ import { Component, OnInit } from '@angular/core';
 
 export class AboutComponent implements OnInit {
 
-    ageYear: Number = 1978;
-    ageMonth: Number = 6;
-    ageDay: Number = 2;
-    age: Number = 0;
+    ageYear: number = 1978;
+    ageMonth: number = 6;
+    ageDay: number = 2;
+    age: number = 0;
 
     constructor() { }
 
     ngOnInit() {
-        let year: Number = (new Date()).getFullYear();
-        let month: Number = (new Date()).getMonth() + 1;
-        let day: Number = (new Date()).getDate();
+        let year: number = (new Date()).getFullYear();
+        let month: number = (new Date()).getMonth() + 1;
+        let day: number = (new Date()).getDate();
 
         if( month > 7 || (month == 6 && day > 2) ) {
             this.age = year - 1978;
