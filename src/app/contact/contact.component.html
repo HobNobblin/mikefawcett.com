@@ -1,50 +1,54 @@
 <div class="contact-style">
-<div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-	<form [formGroup]="messageForm" (ngSubmit)="sendMessage()">
-            <div class="form-group title">
-                <div class="row">
-		    <span><b>CONTACT</b>&nbsp;INFORMATION</span>
-                </div>
-            </div>
-            <div class="form-group content">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <input type=text name="name" formControlName="name" placeholder="your name" required class="form-control" /> 
-                        <div *ngIf="submitted && !success && !messageForm.controls.name.value" class="text text-danger">Name is required</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <input type=text name="phone" formControlName="phone" placeholder="phone" class="form-control" />
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <form [formGroup]="messageForm" (ngSubmit)="sendMessage()">
+                <div class="form-group title">
+                    <div class="row">
+                <span><b>CONTACT</b>&nbsp;INFORMATION</span>
                     </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <input type=text name="email" formControlName="email" placeholder="email address" class="form-control" />
+                <div class="form-group content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type=text name="name" formControlName="name" placeholder="your name" required class="form-control" /> 
+                            <div *ngIf="submitted && !success && !messageForm.controls.name.value" class="text text-danger">Name is required</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type=text name="phone" formControlName="phone" placeholder="phone" class="form-control" />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <textarea name="message" formControlName="message" placeholder="message" required rows="4" class="form-control"></textarea>
-                        <div *ngIf="submitted && !success && !messageForm.controls.message.value" class="text text-danger">Message is required</div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type=text name="email" formControlName="email" placeholder="email address" class="form-control" />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-button">
-                <button class="btn btn-custom theme-color" type="submit">send</button>
-            </div>
-        </form>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <textarea name="message" formControlName="message" placeholder="message" required rows="4" class="form-control"></textarea>
+                            <div *ngIf="submitted && !success && !messageForm.controls.message.value" class="text text-danger">Message is required</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <button class="btn btn-custom theme-color" type="submit">send</button>
+                </div>
+            </form>
 
-        <div *ngIf="submitted" class="results">
-            <div *ngIf="success" class="results">
-	        <span>You message was sent.</span>
-	    </div>
+            <div *ngIf="submitted" class="results">
+                <div *ngIf="success" class="results">
+                    <span>You message was sent.</span>
+                </div>
+            </div>
+
+            &nbsp;
+            &nbsp;
+            <p>Or just email me: <a href="mailto:mike.fawcett@gmail.com">mike.fawcett&#64;gmail.com</a></p>
         </div>
+        <div class="col-sm-1"></div>
     </div>
-    <div class="col-sm-1"></div>
-</div>
 </div>
