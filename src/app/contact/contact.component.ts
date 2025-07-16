@@ -7,7 +7,8 @@ import { MikefawcettComApiService } from '../_services/mikefawcett-com-api.servi
 @Component({
     selector: 'app-contact',
     templateUrl: './contact.component.html',
-    styleUrls: ['./contact.component.scss']
+    styleUrls: ['./contact.component.scss'],
+    standalone: false
 })
 
 export class ContactComponent implements OnInit {
