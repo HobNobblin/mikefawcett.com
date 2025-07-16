@@ -131,7 +131,6 @@
       }
     }
   },
-  "defaultProject": "website",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"
