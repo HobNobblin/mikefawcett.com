@@ -12,7 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^19.2.15",
-    "@angular/core": "^19.2.14",
+    "@angular/core": "^19.2.18",
     "@angular/forms": "^19.2.14",
     "@angular/platform-browser-dynamic": "^19.2.14",
     "@angular/router": "^19.2.14",
